@@ -21,14 +21,25 @@
         <div class="box">X</div>
       
     </div>
-    <div id="vartika">Hello vartika</div>
+
 
 </body>
 </html>
 <script >
-function add(a,b){
-const y = a+b;
-    return y
+// creating custom forEach method 
+function addValueToElements(arr, mutableValue) {
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] += mutableValue;
+    }
+    return arr;
 }
-add(5,7)
+
+const inputArray = [1, 2, 3, 4, 5];
+const mutableValue = 2;
+const resultArray = addValueToElements(inputArray, mutableValue);
+
+console.log("Original Array: ", inputArray);
+console.log("Modified Array: ", resultArray);
+
+
 </script>
