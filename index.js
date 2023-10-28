@@ -25,10 +25,15 @@ var products =[{"id":1,"title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 La
 /*
 filterPrice = products.filter((product)=> product.rating.rate>4)
 console.log("filterPrice : " ,filterPrice)
-*/
+
 
 var str = ["madam","racecar","mom","dad","sarfaraz"];
 
 let palindrom = str.filter(function(s){
     s[i]
 })
+
+*/
+var arr = [1,2,3,4,5];
+const NewArr = arr.map((item)=>item*2).filter((num)=>num %5==0)
+console.log("NewArr",NewArr)
