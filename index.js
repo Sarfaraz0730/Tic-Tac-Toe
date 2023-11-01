@@ -34,6 +34,9 @@ let palindrom = str.filter(function(s){
 })
 
 */
-var arr = [1,2,3,4,5];
-const NewArr = arr.map((item)=>item*2).filter((num)=>num %5==0)
+var arr = [1,2,3,4,5,6];
+const NewArr = arr.map((item)=>item*2).filter((num)=>num %3==0)
+.reduce((acc,index)=>acc+index,0)
 console.log("NewArr",NewArr)
+const sum = arr.reduce((acc,i)=>acc+i,1)
+console.log("sum",sum)
