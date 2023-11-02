@@ -47,12 +47,17 @@ font-family: 'Times New Roman', Times, serif;
   background-color: rgb(148, 239, 148);
   
 }
+.info{
+  font-size: 21px;
+}
 .gameInfo{
  
   padding-left: 34px;
 }
 .imgbox img{
-  display: none;
+
+  width: 0px;
+  transition: width 1s ease-in-out;
 }
 .br-0{
   border-right: 0;
@@ -65,4 +70,16 @@ font-family: 'Times New Roman', Times, serif;
 }
 .bb-0{
   border-bottom: 0;
+}
+#reset{
+  margin: 0 23px;
+  padding: 3px 4px;
+  background-color: rgb(248, 175, 248);
+  border-radius: 4px;
+  border: none;
+  width: 100px;
+  font-size: 25px;
+
+
+
 }
