@@ -32,12 +32,21 @@ wins.forEach(e=>{
 }
 
 const matchTied = ()=>{
-    if(!checkWin()){
-        console.log("no one win yet")
-    }else{
-        console.log("game is still on")
-    }
     
+    let boxText = document.getElementsByClassName("boxtext");
+    let isTied = true;
+
+    for (let i = 0; i < boxText.length; i++) {
+        if (boxText[i].innerText === "") {
+            isTied = false;
+            break;
+        }
+    }
+
+    if (isTied && !isGameover) {
+        document.querySelector(".info").innerText = "Match Tied!";
+        isGameover = true;
+    }
 }
 
 // Game logic 
