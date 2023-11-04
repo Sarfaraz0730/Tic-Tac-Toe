@@ -6,15 +6,27 @@ nav{
   background-color: rgb(16, 3, 77);
   color: white;
   height: 62px;
-  font-size: 27px;
+  font-size: 18px;
   display: flex;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0px 10px; 
+
+  
 
 }
 nav ul{
   list-style-type: none;
+  display: flex;
+  
+ 
 
+}
+li{
+  padding-left: 40px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
 }
 .gameComtainer{
 
@@ -79,7 +91,20 @@ font-family: 'Times New Roman', Times, serif;
   border: none;
   width: 100px;
   font-size: 25px;
+}
+.TwoPlayer{
+  height: 150px;
+  width: 400px;
+  border: 1px solid red;
+  background-color: aqua;
+  margin: auto;
+  padding-left: 10%;
 
-
+}
+#buttonSubmit{
+  height: 20px;
+  width: 100px;
+  background-color: red;
+  border: none;
 
 }
